@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# React Feed
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web construída utilizando **React**, **TypeScript** e **Vite**, com o objetivo de criar uma interface simples para exibir um feed de conteúdo dinâmico. A aplicação serve como base para o desenvolvimento de um sistema de feed mais complexo, permitindo futuras expansões e integrações.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca JavaScript para a construção de interfaces de usuário reativas.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática, facilitando a manutenção e escalabilidade do código.
+- **Vite**: Ferramenta de build moderna, focada em fornecer uma experiência de desenvolvimento mais rápida e eficiente.
+- **ESLint**: Ferramenta de linting para garantir a padronização e qualidade do código.
+- **CSS Modules**: Utilizado para estilização modular, garantindo que os estilos sejam aplicados de maneira escopada a cada componente.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Exibição de um feed dinâmico de postagens.
+- Atualizações em tempo real durante o desenvolvimento, com suporte ao Hot Module Replacement (HMR).
+- Arquitetura modular, facilitando a adição de novas funcionalidades.
+- Código tipado e padronizado com ESLint e TypeScript para maior segurança.
 
-- Configure the top-level `parserOptions` property like this:
+## Como Executar o Projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Siga os passos abaixo para rodar o projeto localmente:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/enzotonatto/react-feed.git
